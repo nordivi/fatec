@@ -1,0 +1,30 @@
+.main-div { 
+    display: flex; 
+    justify-content: center; 
+    background: rgb(104, 0, 104); 
+    border-radius:10px; 
+    margin-left: 10px
+}
+
+.main-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.imgs-box-div {
+    display: flex; 
+    justify-content: center
+}
+
+.imgs-div { 
+    display: flex; 
+    flex-direction: row; 
+    width: 97vw; 
+    justify-content: space-between; 
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.img { 
+    width: 300px; 
+    border-radius:30px
+}
