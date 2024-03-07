@@ -1,0 +1,28 @@
+:root {
+    --primary-color: orange;
+    --secondary-color: lightgrey;
+}
+
+#recipe-txt {
+    color: var(--primary-color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 10px solid yellow;
+    text-align: center;
+    padding-right: 50px;
+
+}
+
+#indredients-txt {
+    text-align: center;
+    color: var(--primary-color)
+}
+
+#pasta-txt {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
