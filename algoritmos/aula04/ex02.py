@@ -1,5 +1,6 @@
 nascimento = int(input('Ano de nascimento: '))
-idade = 24-nascimento
+ano_atual = int(input('Ano atual: '))
+idade = ano_atual-nascimento # Considerando que a pessoa já fez aniversário em questão.
 print('Idade em anos: ', idade)
 
 meses = idade*12
