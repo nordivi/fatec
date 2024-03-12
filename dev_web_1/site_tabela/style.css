@@ -1,0 +1,28 @@
+#table-header {
+    background-color: aqua;
+    
+}
+#tabela-elementos {
+    margin-top: 2px;
+    border: 2px solid black;
+    width: 40%;
+
+}
+#tabela-elementos tr td {
+    text-align: center;
+}
+
+#tabela-elementos tr:not(:first-child):hover {
+    background-color: aquamarine;
+}
+
+#tabela-elementos {
+    margin-top: 2px;
+    width: 40%; 
+    border-collapse: collapse; 
+}
+
+#tabela-elementos td{
+    border: 1px solid black;
+    padding: 8px; 
+}
