@@ -1,0 +1,96 @@
+#tabela-brics {
+    border: 5px solid black;
+    width: 70%; 
+    border-collapse: collapse; 
+    
+}
+
+body{
+    background-color: lightyellow;
+}
+
+tfoot {
+    border: 3px solid black;
+}
+
+#cap-ads{
+    font-size: 14px
+}
+
+#total {
+    border-right: 3px solid black !important;
+}
+#table-head {
+    justify-content: center;
+    
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabela-brics th {
+    border: 1px solid black; 
+    text-align: center; 
+}
+
+
+#tabela-brics th[colspan="2"] {
+    border-right: none
+}
+
+#tabela-brics td{
+    border: 1px solid black;
+    padding: 8px; 
+}
+
+#img-brics { 
+    border: 5px solid black;
+    border-radius: 70px
+}
+
+caption {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.header{
+    border: 2px solid black
+}
+.info:nth-of-type(even){
+    background-color: lightcyan;
+}
+
+.header:nth-of-type(even) {
+    background-color: lightblue;
+}
+
+th[scope='col'] {
+    background-color: lightpink;
+    color: black;
+  }
+
+td[scope='row']{
+    background-color: rgb(255, 249, 181);
+}
+
+.info:nth-of-type(odd){
+    background-color: white;
+}
+
+
+.info:hover{
+    background-color: lightgrey;
+}
+
+.bandeira{
+    width: 50px
+}
+
+td {
+    text-align: center;
+}
