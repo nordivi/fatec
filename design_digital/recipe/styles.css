@@ -25,3 +25,7 @@
 ul {
     list-style: none;
 }
+
+ul li {
+    font-family: "Rock Salt", cursive;
+}
