@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id = 'main-div'>
+    <p class="cadastro">Cadastro</p>
+    <div id="form-div">
+    <form>
+        
+        <label for="login" id="name-label">Login</label>
+        <input type="email" id="login" name="login" placeholder="Insira seu nome">
+        <label for="pass">Senha</label>
+        <input type="password" id="pass" name="pass" placeholder="Insira a senha">
+        <label for="dob">Data de Nascimento</label>
+        <input type="date" id="dob" name="dob">
+        <label for="age">Idade</label>
+        <input type="number" id="age" name="age" value="18" min="18" max="120">
+        <label for="uf">UF</label>
+        <select name="uf">
+            <optgroup label="Norte">
+                <option value="ac">AC</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="pa">PA</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="to">TO</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="al">AL</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="ma">MA</option>
+                <option value="pb">PB</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rn">RN</option>
+                <option value="se">SE</option>
+            </optgroup>
+            <optgroup label="Centro-Oeste">
+                <option value="df">DF</option>
+                <option value="go">GO</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="es">ES</option>
+                <option value="mg">MG</option>
+                <option value="rj">RJ</option>
+                <option value="sp">SP</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="pr">PR</option>
+                <option value="rs">RS</option>
+                <option value="sc">SC</option>
+            </optgroup>
+        </select>
+        
+        <label for="term">Li e concordo com os termos</label>
+        <input type="checkbox" id="term" name="term">
+        <input type="submit" value="Entrar">
+    </form>
+    </div>  
+    </div>
+</body>
+</html>
