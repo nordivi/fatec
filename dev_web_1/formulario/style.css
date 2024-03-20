@@ -1,4 +1,4 @@
-form {
+#form-1 {
     display: flex;
     flex-direction: column;
     background: linear-gradient(60deg, rgba(2,0,36,1) 16%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 80%);
@@ -19,7 +19,7 @@ form {
     font-size: 28px;
 }
 
-label {
+#form-1 label {
     margin-bottom: 2px;
     font-weight: bold;
     background-color:rgba(83, 225, 253, 0.445);
@@ -38,6 +38,8 @@ label {
     text-align: center;
     width: 30vw;
     height: 30vh;
+    display: flex;
+    flex-direction: row;
 }
 
 input, select {
@@ -45,3 +47,20 @@ input, select {
     margin-bottom: 19px
 }
 
+#send-button {
+    background-color: aquamarine;
+    border: 3px solid black;
+    font-weight: bold;
+    padding: 2px 2px 2px 2px;
+    border-radius: 14px;
+}
+
+#send-button:hover {
+    background-color: aqua;
+    transform: translateY(-2px);
+}
+
+#outer-div {
+    display: flex;
+    flex-direction: column;
+}
