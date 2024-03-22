@@ -1,4 +1,4 @@
-ano = int(input("Informa o ano: "))
+ano = int(input("Informe o ano: "))
 
 if ano % 4 != 0:
     print("O ano não é bissexto!")
