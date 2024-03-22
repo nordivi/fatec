@@ -3,9 +3,8 @@ nota_2 = float(input("Digite a segunda nota: "))
 
 media = (nota_1+nota_2)/2
 
-if media > 10 or media < 0:
-    print("Média não é válida!")
-elif media >= 9:
+
+if media >= 9:
     conceito = 'A'
     situacao = 'APROVADO'
 elif media >= 7.5:
