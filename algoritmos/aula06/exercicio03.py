@@ -16,4 +16,4 @@ print(f"A área a ser pintada do aposento é de {area_pintada}m², sendo necessa
 # area porta = 1,68
 # area a ser pintada = 166,32
 # quantidade latas = 1 litros pinta 3m². logo sera necessarios 166,32/3 litros = 55,44
-# cada lata tem 5 litros, logo serão necessárias 11.088 latas de tinta
+# cada lata tem 5 litros, logo serão necessárias 11.088 latas de tinta.
