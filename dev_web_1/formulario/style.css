@@ -5,6 +5,7 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 13px;
+    width: 40vw
 }
 
 #form-div { 
@@ -39,7 +40,7 @@
     width: 30vw;
     height: 30vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 input, select {
@@ -60,7 +61,3 @@ input, select {
     transform: translateY(-2px);
 }
 
-#outer-div {
-    display: flex;
-    flex-direction: column;
-}

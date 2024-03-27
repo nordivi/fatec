@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="titulo">Calculadora</p>
+
+    <label for="calc" id="labelNum">Número</label>
+    <input type="text" id="valorNum" name="calc">
+
+    <button onclick="calcular()">Cadastrar</button>
+
+    <script>
+        const calcular = () => {
+        x = document.getElementById('valorNum').value 
+        y = x * 2
+        y2 = x/2
+        document.getElementById('titulo').innerText = 'Dobro: ' + y + ' | Metade: ' + y2
+        alert('Dobro: ' + y + ' | Metade: ' + y2)
+    }
+    </script>
+</body>
+</html>
