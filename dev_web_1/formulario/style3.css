@@ -1,0 +1,65 @@
+#main-div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px groove rgb(255, 238, 0);
+    border-radius: 18px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.505);
+    
+}
+
+#main-div > * {
+    margin-bottom: 10px;
+}
+
+label{
+    font-weight: 600;
+    align-self: center;
+}
+
+body {
+    background-color: rgba(255, 253, 112, 0.37);
+}
+
+.result {
+    align-self: center;
+}
+
+#sumButton {
+    font-weight: 900px;
+    background-color: bisque;
+    border: 2px solid bisque;
+    font-weight: bold;
+}
+
+#sumButton:hover{
+    background-color: green;
+    border: 2px solid darkgreen
+}
+
+#main-title{
+    align-self: center;
+    color: rgb(255, 0, 132);
+
+}
+
+img {
+    width: 50px;
+    align-self: center;
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+}
+
+#operations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
