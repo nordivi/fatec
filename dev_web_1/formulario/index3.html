@@ -15,14 +15,14 @@
         <input type="text" id="n2">
         <div id="operations">
         <div class="operation">
-            <img onclick="somar(Number(document.getElementById('n1').value), 
-            Number(document.getElementById('n2').value))" id="sumButton" src="https://media.istockphoto.com/id/1365197728/pt/vetorial/add-plus-medical-cross-round-button-3d-vector-icon-cartoon-minimal-style.jpg?s=612x612&w=0&k=20&c=5orQNav5S9FRyjQ0ipgsclzGppDgZj9Q7kKMxERxuls=">
+            <img width="5%" onclick="somar(Number(document.getElementById('n1').value), 
+            Number(document.getElementById('n2').value))" id="sumButton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-MUxG6E3eSiMLVdRf5heM8u-mtJ1dmvO-LUvP-ArSvA&s">
             <h4 class="result" id="result1">A soma é</h4>
         </div>
         <div class="operation">
-        <img onclick="subtrair(Number(document.getElementById('n1').value), 
-        Number(document.getElementById('n2').value))" id="sumButton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWksRgELEG0YoT6k9Kw5SZWReQ5EO-M0EsD8fBuYvljA&s">
-        <h4 class="result" id="result2">A subtração é</h4>
+            <img width="5%" onclick="subtrair(Number(document.getElementById('n1').value), 
+            Number(document.getElementById('n2').value))" id="sumButton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5naDaSB0sRxlz--y503OMZIg1KRK5VqKAXQ9Bm2NbA&s">
+            <h4 class="result" id="result2">A subtração é</h4>
     </div>
 </div>
     </div>
@@ -32,7 +32,7 @@
         }
 
         const subtrair = (n1, n2) => {
-            document.getElementById('result2').textContent = `A subtração é ${n1-n2}`
+            document.getElementById('result2').textContent = `A subtração é ${n1>n2 ? n1 - n2 : n2 - n1}`
         }
     </script>
 </body>
