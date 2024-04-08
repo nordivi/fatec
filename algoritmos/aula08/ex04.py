@@ -1,0 +1,5 @@
+frase = input("Digite a frase: ")
+upper_frase = frase.upper()
+palavra = input('Digite a palavra: ')
+contagem = upper_frase.count(palavra.upper())
+print(f'A palavra {palavra} aparece {contagem} vezes na frase.')
