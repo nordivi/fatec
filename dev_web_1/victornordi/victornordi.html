@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <h1>Atividade 1</h1>
+    <div id="ex01">
+        <h2>Exercício 1</h2>
+        <form>
+            <label for="salario">Salário: </label>
+            <input type="text" name="salario" id="salario">
+            <label for="aumento">Aumento percentual</label>
+            <input type="text" name="aumento" id="aumento">
+            <input type="button" value="Calcular" onclick="calcularAumento()">
+        </form>
+            <p id="result"></p>
+            <script>
+                function calcularAumento(){
+                    sal = Number(document.getElementById('salario').value)
+                    aumento = Number(document.getElementById('aumento').value)
+                    novo_salario = sal + (aumento/100)*sal
+                    document.getElementById('result').textContent = `Seu novo salário é ${novo_salario}!`
+                }
+            </script>
+    </div>
+    <hr>
+    <div id="ex01">
+        <h2>Exercício 2</h2>
+        
+    </div>
+</body>
+</html>
