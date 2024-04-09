@@ -10,7 +10,7 @@
     <div id="ex01">
         <h2>Exercício 1</h2>
         <form>
-            <label for="salario">Salário: </label>
+            <label for="salario">Salário</label>
             <input type="text" name="salario" id="salario">
             <label for="aumento">Aumento percentual</label>
             <input type="text" name="aumento" id="aumento">
@@ -27,9 +27,46 @@
             </script>
     </div>
     <hr>
-    <div id="ex01">
+    <div id="ex02">
         <h2>Exercício 2</h2>
-        
+        <form>
+            <label for="base">Base: </label>
+            <input type="text" name="base" id="base">
+            <label for="aumento">Altura</label>
+            <input type="text" name="altura" id="altura">
+            <input type="button" value="Calcular" onclick="calcularArea()">
+        </form>
+            <textarea id="result-area" readonly></textarea>
+            <script>
+                function calcularArea(){
+                    b = Number(document.getElementById('base').value)
+                    h = Number(document.getElementById('altura').value)
+                    area = (b*h)/2
+                    document.getElementById('result-area').textContent = `A área do triângulo é de ${area}!`
+                }
+            </script>
+
+    </div>
+    <hr>
+    <div id="ex03">
+        <h2>Exercício 3</h2>
+        <form>
+            <label for="nascimento">Ano de nascimento: </label>
+            <input type="text" name="nascimento" id="nascimento">
+            <input type="button" value="Calcular" onclick="calcularIdade()">
+        </form>
+            <script>
+                function calcularIdade(){
+                    nascimento = Number(document.getElementById('nascimento').value)
+                    diff_anos = 2024 - nascimento
+                    diff_meses = 12*diff_anos
+                    diff_dias = 30*diff_meses
+                    console.log(`O usuário tem aproximadamente ${diff_anos} anos, que equivale a ${diff_meses} meses ou ${diff_dias} dias de idade.`)
+                    alert(`Em 2050, o usuário terá ${2050-nascimento} anos de idade.`)
+           
+                }
+            </script>
+
     </div>
 </body>
 </html>
