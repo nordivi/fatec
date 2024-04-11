@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .estilo-label{
             color: red
@@ -20,25 +21,62 @@
     <h1>Cadastro de Clientes</h1>
     <form id="formulario">
         <fieldset name="Dados Gerais">
-            <label class='estilo-label cor-fundo' for="nome">Nome</label>
-            <input class="cor-fundo" type="text" name="nome" id="nome">
-            <label class='estilo-label' for="login">Login</label>
-            <input type="text" name="login" id="login">
-            <label class='estilo-label' for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
+            <label class='form-label' for="nome">Nome</label>
+            <input class="form-control" type="text" name="nome" id="nome">
+            <label class='form-label' for="login">Login</label>
+            <input class='form-control' type="text" name="login" id="login">
+            <label class='form-label' for="senha">Senha</label>
+            <input class='form-control' type="password" name="senha" id="senha">
             
         </fieldset>
         <fieldset>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
+            <label class='form-label' for="endereco">Endereço</label>
+            <input class='form-control' type="text" name="endereco" id="endereco">
 
         </fieldset>
-        <button>Cadastrar</button>
+        <button class="btn btn-success">Cadastrar</button>
+        <div id="carouselExampleCaptions" class="carousel slide" style="height: 500px; width: 500px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvkpEgGC2JxQdbzg-sfXYJkfCrUfbMRe6amUNKq4kLQ&s" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black; background-color: white">Arroz</h5>
+                  <p style="color: black; background-color: white">Isso é um arroz!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/248016/sementes_feijao_carioca_iac_1849_polaco_caixa_com_3_kg_1461_1_0ac426d58edf1cfa230052226de94391.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black; background-color: white">Feijão</h5>
+                  <p style="color: black; background-color: white">Isso é um feijão!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXXTYAuP0hun2ob9Kg34npOKxRYtUCZ3F7KF53gqzuw&s" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black; background-color: white">Batata</h5>
+                  <p style="color: black; background-color: white">Isso é uma batata!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
     </form>
-
-    <form>
-
-
-    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
