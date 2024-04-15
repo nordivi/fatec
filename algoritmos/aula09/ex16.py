@@ -1,6 +1,7 @@
 from random import random
 
-matriz = [[random() for e in range(5)] for e in range(5)]
+matriz = [[random()*((e+1)**3) for e in range(5)] for e in range(5)]
+# Isso é apenas outra forma de gerar números aleatórios arbitrariamente!
 for linha in matriz:
     print(linha)
 soma = 0
