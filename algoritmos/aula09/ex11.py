@@ -1,5 +1,6 @@
 from random import random
 
+# Matriz de elementos reais
 matriz = [[random() for e in range(4)] for e in range(4)]
 
 soma = 0

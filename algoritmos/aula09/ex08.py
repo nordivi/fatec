@@ -1,4 +1,5 @@
-A = [2,5,12,32,13,23,43,54,99,1]
+A = [int(input(f"Digite o valor de posição {j+1}º do vetor.")) for j in range(10)]
+
 
 B = sorted(A)
 
