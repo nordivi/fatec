@@ -14,8 +14,8 @@ doze=0
 
 
 for i in range(30000):
-    n1 = randint(1,7)
-    n2 = randint(1, 7)
+    n1 = randint(1,6)
+    n2 = randint(1, 6)
     soma = n1+n2
     if soma == 2:
         dois+=1

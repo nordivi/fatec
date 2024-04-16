@@ -5,8 +5,9 @@ tres=0
 quatro=0
 cinco=0
 seis=0
+
 for i in range(6000):
-    num = randint(1, 7)
+    num = randint(1, 6)
     if num == 1:
         um+=1
     elif num ==2:
