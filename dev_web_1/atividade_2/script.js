@@ -70,5 +70,14 @@ function ex07(){
 }
 
 function ex08(){
-    
+    const valor = Number(document.getElementById('produto').value)
+    const quantidade = Number(document.getElementById('quantidade').value)
+    const desconto = 0
+    const valor_bruto = valor*quantidade
+    if (valor_bruto >= 1000){
+        desconto += 0.1*valor_bruto
+    }
+
+    const forma_pagamento = document.querySelector('input[name="pagamento"]:checked').value
+    const desconto_pagamento = document.querySelector('input[name="pagamento"]:checked').value
 }
