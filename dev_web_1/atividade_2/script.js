@@ -72,12 +72,21 @@ function ex07(){
 function ex08(){
     const valor = Number(document.getElementById('produto').value)
     const quantidade = Number(document.getElementById('quantidade').value)
-    const desconto = 0
+    let desconto = 0
     const valor_bruto = valor*quantidade
+    let valor_liquido = 0
     if (valor_bruto >= 1000){
         desconto += 0.1*valor_bruto
+        valor_liquido = valor_bruto - desconto
     }
 
-    const forma_pagamento = document.querySelector('input[name="pagamento"]:checked').value
     const desconto_pagamento = document.querySelector('input[name="pagamento"]:checked').value
+    const id_pagamento = document.querySelector('input[name="pagamento"]:checked').id
+    const forma_pagamento = document.getElementById(`label-${id_pagamento}`).innerHTML
+    const desconto_forma_pagamento = Number(desconto_pagamento)*valor_liquido
+    valor_liquido -= desconto_forma_pagamento
+    desconto += desconto_forma_pagamento
+    document.getElementById('resultado').innerHTML = `
+    Valor bruto: ${valor_bruto} | Descontos: ${desconto} | Forma pagamento: ${forma_pagamento} | Salário líquido: ${valor_liquido}`
+    
 }
