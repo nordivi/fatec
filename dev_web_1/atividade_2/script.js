@@ -1,3 +1,5 @@
+// https://github.com/nordivi/fatec/tree/main/dev_web_1/atividade_2
+
 
 function getRandom(min, max){
     return Number(Math.floor(Math.random() * (max - min + 1)) + min)
