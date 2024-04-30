@@ -20,6 +20,7 @@ function ex02(){
 
 
 function ex03(){
+    // Não fala se devemos recolher esses valores, então criarei um array aleatório.
     lista_numeros = [getRandom(0, 1000), getRandom(0, 1000), getRandom(0, 1000)]
     menor_numero = Math.min(lista_numeros)
     console.log(menor_numero)
@@ -76,10 +77,10 @@ function ex08(){
     const quantidade = Number(document.getElementById('quantidade').value)
     let desconto = 0
     const valor_bruto = valor*quantidade
-    let valor_liquido = 0
+    let valor_liquido = valor_bruto
     if (valor_bruto >= 1000){
         desconto += 0.1*valor_bruto
-        valor_liquido = valor_bruto - desconto
+        valor_liquido -= desconto
     }
 
     const desconto_pagamento = document.querySelector('input[name="pagamento"]:checked').value
@@ -89,6 +90,6 @@ function ex08(){
     valor_liquido -= desconto_forma_pagamento
     desconto += desconto_forma_pagamento
     document.getElementById('resultado').innerHTML = `
-    Valor bruto: ${valor_bruto} | Descontos: ${desconto} | Forma pagamento: ${forma_pagamento} | Salário líquido: ${valor_liquido}`
+    Valor bruto: ${valor_bruto} | Descontos: ${desconto} | Forma pagamento: ${forma_pagamento} | Valor líquido: ${valor_liquido}`
     
 }
