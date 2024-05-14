@@ -1,15 +1,27 @@
 :root {
     --primary-color: orange;
-    --secondary-color: lightgrey;
+    --secondary-color: rgba(243, 242, 242, 0.911);
+    --terciary-color: rgba(180, 178, 178, 1);
+}
+
+#stars{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    width: 640px;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #recipe-txt {
     color: var(--primary-color);
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border: 10px solid yellow;
     text-align: center;
-    padding-right: 50px;
 }
 
 #ingredients-txt {
@@ -17,15 +29,186 @@
     color: var(--primary-color)
 }
 
-#pasta-txt {
+.txt {
     background-color: var(--secondary-color);
     text-align: center;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
 }
 
-ul {
-    list-style: none;
+
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-ul li {
-    font-family: "Rock Salt", cursive;
+
+
+#img-recipe {
+    display: block;
+    margin: 0 auto;
+}
+
+#left-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    margin-top: 3px;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 70%;
+}
+
+#right-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    margin-top: 3px;
+    align-items: center;
+    height: 6rem;
+    width: 30%;
+    margin-left: 6px;
+}
+
+.receita {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+.vertical-line {
+    border-left: 2px solid var(--terciary-color);
+    height: 60px; 
+    margin: 0;
+}
+
+#resume{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.receita img {
+    margin-bottom: 5px; 
+}
+
+.receita p {
+    margin-top: 5px; 
+    margin-bottom: 0; 
+}
+
+#right-resume p {
+    margin-top: 5px; 
+    margin-bottom: 0; 
+}
+
+#breaker {
+    height: 4.2rem;
+    background-color: var(--secondary-color);
+    margin-top: 8px;
+}
+
+#ingredientes-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#content{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button { 
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    display:flex;
+    flex-direction: row;
+    border: 0px;
+    width: 16rem;
+    height: 2.5rem;
+    justify-content: space-evenly;
+}
+
+button p {
+    color: white;
+    font-size: 16px;
+
+}
+button img {
+    padding: 3px;
+}
+
+.orange {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.title{
+    color: var(--terciary-color);
+    font-size: 14px;
+}
+
+.rating{
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 135px;
+    flex-direction: row;
+    margin-bottom: 18px
+  }
+  
+  .rating input{
+    display: none;
+  }
+  
+  .rating label{
+      display: block;
+      cursor: pointer;
+  }
+  
+  .rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-size: 30px;
+    color: #0e1316;
+  }
+  
+  .rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: #ffff00;
+    top: 0;
+    opacity: 0;
+    transition: .5;
+    text-shadow: 0 4px 5px rgba(0, 0, 0, .5);
+  }
+  .rating label:hover:after,
+  .rating label:hover ~ label:after,
+  .rating input:checked ~ label:after{
+    opacity: 1;
+  }
+
+
+#stars{
+    justify-content: start;
+    height: 100px;
+    width: 150px;
 }

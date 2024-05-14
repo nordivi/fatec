@@ -9,23 +9,97 @@
     <title>Receitas de DSM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <h1 id="recipe-txt">BOLINHO DE CHURROS</h1>
-
-    <h2 id="ingredients-txt">INGREDIENTES</h2>
-
-    <h3 id="pasta-txt">MASSA</h3>
-    <ul>
-        <li>200ml de água</li>
-        <li>1 colher (sopa) de manteiga</li>
-        <li>4 colheres (sopa) de açúcar</li>
-        <li>1 colher (chá) de canela em pó</li>
-        <li>1 xícara de farinha de trigo</li>
+    <div id="content">
+        <div id="header">
+            <h1 id="recipe-txt">BOLINHA DE CHURROS</h1>
+            <div id="stars">
+                <div class="rating">
+                    <input type="radio" name="star" id="star1"><label for="star1"></label>
+                    <input type="radio" name="star" id="star2"><label for="star2"></label>
+                    <input type="radio" name="star" id="star3"><label for="star3"></label>
+                    <input type="radio" name="star" id="star4"><label for="star4"></label>
+                    <input type="radio" name="star" id="star5"><label for="star5"></label>
+                  </div>
+                <div>Avalie essa receita</div>
+            </div>
+        </div>
+        <img src="imgs/churros.webp" alt="Foto do churros" id="img-recipe">
         
-    </ul>
-    
+        <div id="resume">
+            <div id="left-resume">
+                <div class="receita">
+                    <img src="imgs/clock.svg" alt="clock">
+                    <p class="title">PREPARO</p>
+                    <p class="orange">35 MIN</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="receita">
+                    <img src="imgs/waiter.svg" alt="waiter">
+                    <p class="title">RENDIMENTO</p>
+                    <p class="orange">8 PORÇÕES</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="receita">
+                    <img src="imgs/heart.svg" alt="heart">
+                    <p class="title">FAVORITOS</p>
+                    <p class="orange">1.168</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="receita">
+                    <img src="imgs/comment.svg" alt="comment">
+                    <p class="title">COMENTÁRIOS</p>
+                    <p class="orange">4</p>
+                </div>
+            </div>
+            <div id="right-resume">
+                <img src="imgs/chef.svg" alt="Foto do chef" id="img-chef">
+                <div>
+                    <p class="orange">TUDOGOSTOSO</p>
+                    <p class="title">Membro desde 2005</p>
+                </div>
+            </div>
+        </div>
+        <div id="breaker"></div>
+        <div id="ingredientes-div">
+            <img src="imgs/backpack.svg" alt="Foto do backpack" id="img-backpack">
+            <h2 id="ingredients-txt">INGREDIENTES</h2>
+        </div>
+        
+
+        <h3 class="txt">MASSA</h3>
+        <ul>
+            <li>200ml de água</li>
+            <li>1 colher (sopa) de manteiga</li>
+            <li>4 colheres (sopa) de açúcar</li>
+            <li>1 colher (chá) de canela em pó</li>
+            <li>1 xícara de farinha de trigo</li>
+            
+        </ul>
+
+        <h3 class="txt">EMPANAMENTO</h3>
+        <ul>
+            <li>1 colher (sopa) de canela</li>
+            <li>1/2 xícara de açúcar</li>
+            
+        </ul>
+
+        <h3 class="txt">RECHEIO</h3>
+        <ul>
+            <li>150g de doce de leite</li>
+            
+        </ul>
+
+            
+            <button>
+                <img src="imgs/shopcart.svg" alt="Shop cart">
+                <p>Comprar ingredientes</p></button>
+
+        
+    </div>
 </body>
 </html>
