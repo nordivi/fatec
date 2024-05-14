@@ -9,7 +9,7 @@ def exibir_menu():
 
         if choice.isdigit():
             if int(choice) in list(range(1, 4)):
-                return choice
+                return int(choice)
 
         print("Opção inválida! Por favor, escolha uma opção entre 1 e 3.")
 

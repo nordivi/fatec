@@ -1,10 +1,10 @@
-def valida_cpf(cpf: str):
+def valida_cpf(cpf):
     cpf = ''.join(filter(str.isdigit, cpf))
 
     if len(cpf) != 11 or cpf == cpf[0] * 11:
         return False
 
-    t, mult = 0, 0
+    t, mult = 0, 10
     for i in range(9):
         t += int(cpf[i]) * mult
         mult -= 1
@@ -14,7 +14,7 @@ def valida_cpf(cpf: str):
     else:
         d1 = 11 - resto
 
-    t, mult = 0, 0
+    t, mult = 0, 11
     for i in range(10):
         t += int(cpf[i]) * mult
         mult -= 1
