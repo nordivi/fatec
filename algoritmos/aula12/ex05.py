@@ -1,4 +1,4 @@
-pi = 3.14
+from math import pi
 
 def volume(r):
     return (4/3)*pi*(r**3)
