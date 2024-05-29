@@ -1,0 +1,58 @@
+:root{
+    --main-color: #065a76;
+    --text-color: #0098ca;
+}
+
+* {
+    margin: 0.6rem
+}
+
+.header{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 4rem;
+    height: 4rem;
+    font-size: 23px;
+}
+
+.label-text{
+    color: var(--text-color)
+}
+
+.logradouro{
+    display: flex;
+    flex-direction: column;
+}
+
+#pesquisaCEP {
+    background-image: url('./lupa-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    width: 10rem;
+    margin: 0.5rem; 
+    height: 2rem
+}
+
+.img-sizing{
+    width: 15rem !important;
+    height: 15rem !important;
+}
