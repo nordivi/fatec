@@ -12,7 +12,7 @@ soma = sum(tracking.values())
 media = round(soma/len(tracking),2)
 
 
-print('ACME Inc' + 20*' ' + 'Uso do espaço em disco pelos usuários')
+print('ACME Inc.' + 20*' ' + 'Uso do espaço em disco pelos usuários')
 print(68*'-')
 print('Nr.' + '   ' + 'Usuário' + 10*' ', 'Espaço utilizado', 9*' ', '% do uso')
 index = 0
