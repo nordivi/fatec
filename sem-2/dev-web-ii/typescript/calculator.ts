@@ -3,13 +3,11 @@ import PromptSync = require("prompt-sync")
 const prompt = PromptSync()
 
 // 3
-
-
 const calculate = (x: number, y: number): void => {
     console.log(`${x} + ${y} = ${x+y}`)
     console.log(`${x} - ${y} = ${x-y}`)
-    console.log(`${x} * ${y} = ${x*y}`)
     console.log(`${x} / ${y} = ${x/y}`)
+    console.log(`${x} * ${y} = ${x*y}`)
 }
 
 

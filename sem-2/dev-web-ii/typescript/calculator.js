@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var PromptSync = require("prompt-sync");
-var prompt = PromptSync();
+const PromptSync = require("prompt-sync");
+const prompt = PromptSync();
 // 3
-var calculate = function (x, y) {
-    console.log("".concat(x, " + ").concat(y, " = ").concat(x + y));
-    console.log("".concat(x, " - ").concat(y, " = ").concat(x - y));
-    console.log("".concat(x, " * ").concat(y, " = ").concat(x * y));
-    console.log("".concat(x, " / ").concat(y, " = ").concat(x / y));
+const calculate = (x, y) => {
+    console.log(`${x} + ${y} = ${x + y}`);
+    console.log(`${x} - ${y} = ${x - y}`);
+    console.log(`${x} / ${y} = ${x / y}`);
+    console.log(`${x} * ${y} = ${x * y}`);
 };
-var x = Number(prompt("Enter n_1: "));
-var y = Number(prompt("Enter n_2: "));
+let x = Number(prompt("Enter n_1: "));
+let y = Number(prompt("Enter n_2: "));
 calculate(x, y);
