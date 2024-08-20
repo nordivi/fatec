@@ -19,10 +19,10 @@ public class helloWorld
         System.out.printf("%f * %f = %f%n", x, y, x*y);
         System.out.printf("%f ^ %f = %f%n", x, y, Math.pow(x,y));
         if (y == 0) {
-            System.out.printf("Nao e possivel dividir por 0!");
+            System.out.printf("Nao e possivel dividir nem racionalizar por 0!");
             return;
         }
         System.out.printf("%f / %f = %f%n", x, y, x/y);
-        
+        System.out.printf("%f SQRT %f = %f%n", x, y, Math.pow(x,1/y));
     }
 }
