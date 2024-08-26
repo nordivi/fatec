@@ -14,5 +14,5 @@ insert into cidade (Codcidade, Nomecidade, Cdestado)
 values ('4','Copacabana', 'RJ')
 
 
-select Nomecidade, cidade.cdestado, Nomeestado from cidade
-left join estado on cidade.cdestado = estado.cdestado
+select Nomecidade, c.cdestado, Nomeestado from cidade as c
+left join estado as e on c.cdestado = e.cdestado
