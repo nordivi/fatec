@@ -11,20 +11,20 @@ public class java {
         int qtt;
         Scanner myObj = new Scanner(System.in);
         
-        System.out.printf("Quantos números deseja digitar? ");
+        System.out.printf("Quantos numeros deseja digitar? ");
         qtt = myObj.nextInt();
         for (int i=0; i < qtt; i++){
             float n;
-            System.out.printf("Digite o %d número: ", i + 1);
+            System.out.printf("Digite o %d numero: ", i + 1);
             n = myObj.nextFloat();
             numbers.add(n);
         }
-        System.out.printf("Qual operação deseja realizar?\n");
+        System.out.printf("Qual operacao deseja realizar?\n");
         System.out.printf("Opcoes: (+, -, *, /, ^, radiciacao)");
         myObj.nextLine();
         String operacao = myObj.nextLine();
         float resultado = numbers.get(0);
-        if (null != operacao)
+        if (operacao != null)
             switch (operacao) {
              case "+" -> {
                  for (int i = 1; i < qtt; i++){
@@ -47,7 +47,7 @@ public class java {
              case "/" -> {
                  for (int i = 1; i < qtt; i++){
                      if (numbers.get(i) == 0){
-                        System.out.printf("Impossível dividir por 0 nos números reais.");
+                        System.out.printf("Impossível dividir por 0 nos numeros reais.");
                          return;
                      }
                      resultado = resultado / numbers.get(i);
@@ -63,7 +63,7 @@ public class java {
              case "radiciacao" -> {
                  for (int i = 1; i < qtt; i++){
                      if (numbers.get(i) == 0){
-                        System.out.printf("Impossível racionalizar por 0 nos números reais.");
+                        System.out.printf("Impossível racionalizar por 0 nos numeros reais.");
                          return;
                      }
                      resultado = (float) Math.pow(resultado, 1/numbers.get(i));
