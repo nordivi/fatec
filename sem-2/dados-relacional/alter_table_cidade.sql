@@ -5,3 +5,5 @@ alter table cidade add constraint pk_codcidade primary key (codcidade)
 alter table estado add primary key (cdestado)
 
 alter table cidade add foreign key (cdestado) references estado (cdestado)
+
+select * from cidade
