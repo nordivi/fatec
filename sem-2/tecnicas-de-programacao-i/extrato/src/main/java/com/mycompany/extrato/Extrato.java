@@ -29,6 +29,9 @@ public class Extrato {
                 "12345678901234", 
                 'M'         
         );
+        cliente.setEmail("victorw.nordi@icloud.com");
+        cliente.setNome("Vi");
+        cliente.setCPF("321321322");
 
         System.out.println("Cliente Details:");
         System.out.println("ID: " + cliente.getIdCli());
@@ -89,5 +92,41 @@ public class Extrato {
         System.out.println("ID Histórico: " + extratoMovimentacao.getIdHis());
         System.out.println("Valor: " + extratoMovimentacao.getValor());
         System.out.println("Saldo: " + extratoMovimentacao.getSaldo());
+        
+        Agencias agencia = new Agencias(
+            "1234", 
+            "Agency Name", 
+            "Rua dos Testes, 123", 
+            "123", 
+            "Apartment 101",
+            "Bairro dos Testes",
+            "Cidade dos Testes",
+            "SP", 
+            "12345678", 
+            "12345678901234", 
+            "John Doe"
+        );
+
+
+        System.out.println("Agência número: " + agencia.getNumAgencia());
+        System.out.println("Nome: " + agencia.getNome());
+        System.out.println("Endereço: " + agencia.getEndereco());
+        System.out.println("Número: " + agencia.getNumero());
+        System.out.println("Complemento: " + agencia.getComplemento());
+        System.out.println("Bairro: " + agencia.getBairro());
+        System.out.println("Cidade: " + agencia.getCidade());
+        System.out.println("UF: " + agencia.getUF());
+        System.out.println("CEP: " + agencia.getCEP());
+        System.out.println("CNPJ: " + agencia.getCNPJ());
+        System.out.println("Gerente: " + agencia.getGerente());
+
+        if (agencia.isValid()) {
+            System.out.println("Agência válida");
+        } else {
+            System.out.println("Agência inválida");
+        }
+        
+        
+        
     }
 }
